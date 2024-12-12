@@ -24,6 +24,4 @@ $books = [
 
 $filteredBooks = array_filter($books, fn($book) => $book["release date"] <= 1950);
 
-$heading = "Home Page";
-
-require 'views/home.view.php';
+view('home.view.php', ['heading' => 'Home Pagex']);
